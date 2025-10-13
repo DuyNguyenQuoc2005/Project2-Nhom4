@@ -26,7 +26,7 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
 
 builder.Services.AddAuthorization();
 
-var connectionString = builder.Configuration.GetConnectionString("NhtDbConnect");
+var connectionString = builder.Configuration.GetConnectionString("VanPhongPhamConnection");
 builder.Services.AddDbContext<VanPhongPhamContext>(x => x.UseSqlServer(connectionString));
 
 var app = builder.Build();

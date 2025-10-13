@@ -1151,6 +1151,252 @@
       ]
     },
     {
+      "Route": "css/admin.css",
+      "AssetFile": "css/admin.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "19282"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0ierj+UjoTjf59jiwo1mXgkWTkadXh8SA15WEKY6xSU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Oct 2025 19:16:01 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-0ierj+UjoTjf59jiwo1mXgkWTkadXh8SA15WEKY6xSU="
+        }
+      ]
+    },
+    {
+      "Route": "css/admin.uwtnx4xawr.css",
+      "AssetFile": "css/admin.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "19282"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0ierj+UjoTjf59jiwo1mXgkWTkadXh8SA15WEKY6xSU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Oct 2025 19:16:01 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uwtnx4xawr"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-0ierj+UjoTjf59jiwo1mXgkWTkadXh8SA15WEKY6xSU="
+        },
+        {
+          "Name": "label",
+          "Value": "css/admin.css"
+        }
+      ]
+    },
+    {
+      "Route": "css/dashboard.css",
+      "AssetFile": "css/dashboard.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10212"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xzlRHvkqH7Yi7LrSsRDPafCTwJ7lq+PLqIWuYMDTfSM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Oct 2025 18:15:33 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xzlRHvkqH7Yi7LrSsRDPafCTwJ7lq+PLqIWuYMDTfSM="
+        }
+      ]
+    },
+    {
+      "Route": "css/dashboard.ztdnkshosl.css",
+      "AssetFile": "css/dashboard.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10212"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xzlRHvkqH7Yi7LrSsRDPafCTwJ7lq+PLqIWuYMDTfSM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Oct 2025 18:15:33 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ztdnkshosl"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-xzlRHvkqH7Yi7LrSsRDPafCTwJ7lq+PLqIWuYMDTfSM="
+        },
+        {
+          "Name": "label",
+          "Value": "css/dashboard.css"
+        }
+      ]
+    },
+    {
+      "Route": "css/khachhang.css",
+      "AssetFile": "css/khachhang.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8812"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YaOyqV1AmizA/k4hznCUp2xv4/aY5cnpfiGeat/qRV8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Oct 2025 19:28:58 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-YaOyqV1AmizA/k4hznCUp2xv4/aY5cnpfiGeat/qRV8="
+        }
+      ]
+    },
+    {
+      "Route": "css/khachhang.nulsforyyv.css",
+      "AssetFile": "css/khachhang.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8812"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YaOyqV1AmizA/k4hznCUp2xv4/aY5cnpfiGeat/qRV8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Oct 2025 19:28:58 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nulsforyyv"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-YaOyqV1AmizA/k4hznCUp2xv4/aY5cnpfiGeat/qRV8="
+        },
+        {
+          "Name": "label",
+          "Value": "css/khachhang.css"
+        }
+      ]
+    },
+    {
       "Route": "css/site.css",
       "AssetFile": "css/site.css",
       "Selectors": [],

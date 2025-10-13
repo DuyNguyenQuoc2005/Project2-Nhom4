@@ -11,6 +11,9 @@ wwwroot\assets\img\logo.png
 wwwroot\assets\img\logo2.png
 wwwroot\assets\img\slider_1.png
 wwwroot\assets\img\sp9.webp
+wwwroot\css\admin.css
+wwwroot\css\dashboard.css
+wwwroot\css\khachhang.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\js\site.js

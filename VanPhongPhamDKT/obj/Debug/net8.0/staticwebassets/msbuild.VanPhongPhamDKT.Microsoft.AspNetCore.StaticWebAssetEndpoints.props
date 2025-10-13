@@ -156,6 +156,42 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-7/woFcO6A7O\u002BFl3RdD/iQkwZCcTqt3Erp4vSDmjJQ5Q="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"36914"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u00227/woFcO6A7O\u002BFl3RdD/iQkwZCcTqt3Erp4vSDmjJQ5Q=\u0022"},{"Name":"Last-Modified","Value":"Mon, 22 Sep 2025 03:06:15 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/VanPhongPhamDKT/css/admin.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\admin.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-0ierj\u002BUjoTjf59jiwo1mXgkWTkadXh8SA15WEKY6xSU="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"19282"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00220ierj\u002BUjoTjf59jiwo1mXgkWTkadXh8SA15WEKY6xSU=\u0022"},{"Name":"Last-Modified","Value":"Sun, 12 Oct 2025 19:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/VanPhongPhamDKT/css/admin.uwtnx4xawr.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\admin.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"uwtnx4xawr"},{"Name":"integrity","Value":"sha256-0ierj\u002BUjoTjf59jiwo1mXgkWTkadXh8SA15WEKY6xSU="},{"Name":"label","Value":"_content/VanPhongPhamDKT/css/admin.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"19282"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00220ierj\u002BUjoTjf59jiwo1mXgkWTkadXh8SA15WEKY6xSU=\u0022"},{"Name":"Last-Modified","Value":"Sun, 12 Oct 2025 19:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/VanPhongPhamDKT/css/dashboard.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\dashboard.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-xzlRHvkqH7Yi7LrSsRDPafCTwJ7lq\u002BPLqIWuYMDTfSM="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"10212"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022xzlRHvkqH7Yi7LrSsRDPafCTwJ7lq\u002BPLqIWuYMDTfSM=\u0022"},{"Name":"Last-Modified","Value":"Sun, 12 Oct 2025 18:15:33 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/VanPhongPhamDKT/css/dashboard.ztdnkshosl.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\dashboard.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ztdnkshosl"},{"Name":"integrity","Value":"sha256-xzlRHvkqH7Yi7LrSsRDPafCTwJ7lq\u002BPLqIWuYMDTfSM="},{"Name":"label","Value":"_content/VanPhongPhamDKT/css/dashboard.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"10212"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022xzlRHvkqH7Yi7LrSsRDPafCTwJ7lq\u002BPLqIWuYMDTfSM=\u0022"},{"Name":"Last-Modified","Value":"Sun, 12 Oct 2025 18:15:33 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/VanPhongPhamDKT/css/khachhang.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\khachhang.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-YaOyqV1AmizA/k4hznCUp2xv4/aY5cnpfiGeat/qRV8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"8812"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022YaOyqV1AmizA/k4hznCUp2xv4/aY5cnpfiGeat/qRV8=\u0022"},{"Name":"Last-Modified","Value":"Sun, 12 Oct 2025 19:28:58 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/VanPhongPhamDKT/css/khachhang.nulsforyyv.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\khachhang.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"nulsforyyv"},{"Name":"integrity","Value":"sha256-YaOyqV1AmizA/k4hznCUp2xv4/aY5cnpfiGeat/qRV8="},{"Name":"label","Value":"_content/VanPhongPhamDKT/css/khachhang.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"8812"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022YaOyqV1AmizA/k4hznCUp2xv4/aY5cnpfiGeat/qRV8=\u0022"},{"Name":"Last-Modified","Value":"Sun, 12 Oct 2025 19:28:58 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/VanPhongPhamDKT/css/site.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>

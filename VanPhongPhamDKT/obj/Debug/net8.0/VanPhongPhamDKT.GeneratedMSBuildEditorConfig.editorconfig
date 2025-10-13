@@ -52,6 +52,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYWRtaW5zXFZpZXdzXERhc2hib2FyZFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/Education/Project 2/Project2-Nhom4/Project2-Nhom4/VanPhongPhamDKT/Areas/admins/Views/DonHang/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYWRtaW5zXFZpZXdzXERvbkhhbmdcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Education/Project 2/Project2-Nhom4/Project2-Nhom4/VanPhongPhamDKT/Areas/admins/Views/DonHang/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYWRtaW5zXFZpZXdzXERvbkhhbmdcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Education/Project 2/Project2-Nhom4/Project2-Nhom4/VanPhongPhamDKT/Areas/admins/Views/DonHang/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYWRtaW5zXFZpZXdzXERvbkhhbmdcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Education/Project 2/Project2-Nhom4/Project2-Nhom4/VanPhongPhamDKT/Areas/admins/Views/DonHang/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYWRtaW5zXFZpZXdzXERvbkhhbmdcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Education/Project 2/Project2-Nhom4/Project2-Nhom4/VanPhongPhamDKT/Areas/admins/Views/DonHang/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYWRtaW5zXFZpZXdzXERvbkhhbmdcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/Education/Project 2/Project2-Nhom4/Project2-Nhom4/VanPhongPhamDKT/Areas/admins/Views/KhachHang/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYWRtaW5zXFZpZXdzXEtoYWNoSGFuZ1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

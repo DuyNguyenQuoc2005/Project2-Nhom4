@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "jQY6R/Ko/hyI2oJLqAkulckJBgFeGodWRsTl5iC81T4=",
+  "Hash": "Kw7y/mSLy1NeYbo8A070KME+qMbF+PrqQj7erJt7KVY=",
   "Source": "VanPhongPhamDKT",
   "BasePath": "_content/VanPhongPhamDKT",
   "Mode": "Default",
@@ -330,6 +330,69 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\img\\sp9.webp"
+    },
+    {
+      "Identity": "E:\\Education\\Project 2\\Project2-Nhom4\\Project2-Nhom4\\VanPhongPhamDKT\\wwwroot\\css\\admin.css",
+      "SourceId": "VanPhongPhamDKT",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Education\\Project 2\\Project2-Nhom4\\Project2-Nhom4\\VanPhongPhamDKT\\wwwroot\\",
+      "BasePath": "_content/VanPhongPhamDKT",
+      "RelativePath": "css/admin#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "uwtnx4xawr",
+      "Integrity": "0ierj+UjoTjf59jiwo1mXgkWTkadXh8SA15WEKY6xSU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\admin.css"
+    },
+    {
+      "Identity": "E:\\Education\\Project 2\\Project2-Nhom4\\Project2-Nhom4\\VanPhongPhamDKT\\wwwroot\\css\\dashboard.css",
+      "SourceId": "VanPhongPhamDKT",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Education\\Project 2\\Project2-Nhom4\\Project2-Nhom4\\VanPhongPhamDKT\\wwwroot\\",
+      "BasePath": "_content/VanPhongPhamDKT",
+      "RelativePath": "css/dashboard#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ztdnkshosl",
+      "Integrity": "xzlRHvkqH7Yi7LrSsRDPafCTwJ7lq+PLqIWuYMDTfSM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\dashboard.css"
+    },
+    {
+      "Identity": "E:\\Education\\Project 2\\Project2-Nhom4\\Project2-Nhom4\\VanPhongPhamDKT\\wwwroot\\css\\khachhang.css",
+      "SourceId": "VanPhongPhamDKT",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Education\\Project 2\\Project2-Nhom4\\Project2-Nhom4\\VanPhongPhamDKT\\wwwroot\\",
+      "BasePath": "_content/VanPhongPhamDKT",
+      "RelativePath": "css/khachhang#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "nulsforyyv",
+      "Integrity": "YaOyqV1AmizA/k4hznCUp2xv4/aY5cnpfiGeat/qRV8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\khachhang.css"
     },
     {
       "Identity": "E:\\Education\\Project 2\\Project2-Nhom4\\Project2-Nhom4\\VanPhongPhamDKT\\wwwroot\\css\\site.css",
@@ -2656,6 +2719,252 @@
         {
           "Name": "integrity",
           "Value": "sha256-7/woFcO6A7O+Fl3RdD/iQkwZCcTqt3Erp4vSDmjJQ5Q="
+        }
+      ]
+    },
+    {
+      "Route": "css/admin.css",
+      "AssetFile": "E:\\Education\\Project 2\\Project2-Nhom4\\Project2-Nhom4\\VanPhongPhamDKT\\wwwroot\\css\\admin.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "19282"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0ierj+UjoTjf59jiwo1mXgkWTkadXh8SA15WEKY6xSU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Oct 2025 19:16:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-0ierj+UjoTjf59jiwo1mXgkWTkadXh8SA15WEKY6xSU="
+        }
+      ]
+    },
+    {
+      "Route": "css/admin.uwtnx4xawr.css",
+      "AssetFile": "E:\\Education\\Project 2\\Project2-Nhom4\\Project2-Nhom4\\VanPhongPhamDKT\\wwwroot\\css\\admin.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "19282"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0ierj+UjoTjf59jiwo1mXgkWTkadXh8SA15WEKY6xSU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Oct 2025 19:16:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uwtnx4xawr"
+        },
+        {
+          "Name": "label",
+          "Value": "css/admin.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-0ierj+UjoTjf59jiwo1mXgkWTkadXh8SA15WEKY6xSU="
+        }
+      ]
+    },
+    {
+      "Route": "css/dashboard.css",
+      "AssetFile": "E:\\Education\\Project 2\\Project2-Nhom4\\Project2-Nhom4\\VanPhongPhamDKT\\wwwroot\\css\\dashboard.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10212"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xzlRHvkqH7Yi7LrSsRDPafCTwJ7lq+PLqIWuYMDTfSM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Oct 2025 18:15:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xzlRHvkqH7Yi7LrSsRDPafCTwJ7lq+PLqIWuYMDTfSM="
+        }
+      ]
+    },
+    {
+      "Route": "css/dashboard.ztdnkshosl.css",
+      "AssetFile": "E:\\Education\\Project 2\\Project2-Nhom4\\Project2-Nhom4\\VanPhongPhamDKT\\wwwroot\\css\\dashboard.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10212"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xzlRHvkqH7Yi7LrSsRDPafCTwJ7lq+PLqIWuYMDTfSM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Oct 2025 18:15:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ztdnkshosl"
+        },
+        {
+          "Name": "label",
+          "Value": "css/dashboard.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-xzlRHvkqH7Yi7LrSsRDPafCTwJ7lq+PLqIWuYMDTfSM="
+        }
+      ]
+    },
+    {
+      "Route": "css/khachhang.css",
+      "AssetFile": "E:\\Education\\Project 2\\Project2-Nhom4\\Project2-Nhom4\\VanPhongPhamDKT\\wwwroot\\css\\khachhang.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8812"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YaOyqV1AmizA/k4hznCUp2xv4/aY5cnpfiGeat/qRV8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Oct 2025 19:28:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-YaOyqV1AmizA/k4hznCUp2xv4/aY5cnpfiGeat/qRV8="
+        }
+      ]
+    },
+    {
+      "Route": "css/khachhang.nulsforyyv.css",
+      "AssetFile": "E:\\Education\\Project 2\\Project2-Nhom4\\Project2-Nhom4\\VanPhongPhamDKT\\wwwroot\\css\\khachhang.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8812"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YaOyqV1AmizA/k4hznCUp2xv4/aY5cnpfiGeat/qRV8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Oct 2025 19:28:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nulsforyyv"
+        },
+        {
+          "Name": "label",
+          "Value": "css/khachhang.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-YaOyqV1AmizA/k4hznCUp2xv4/aY5cnpfiGeat/qRV8="
         }
       ]
     },
