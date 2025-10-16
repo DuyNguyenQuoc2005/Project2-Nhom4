@@ -1,7 +1,12 @@
 ﻿/* ===== KhachHang Theme (List) ===== */
 
-/* Nền riêng cho trang Khách hàng - OPTIONAL
-   Nếu muốn dùng, thêm <div class="site-bg--khachhang"></div> trong view. */
+/* 0) Nền & body trong suốt để không che nền */
+html, body {
+    min-height: 100%;
+    background: transparent !important;
+}
+
+/* 1) NỀN TRANG KHÁCH HÀNG – chỉ 1 rule, để CUỐI FILE cũng ok */
 .site-bg--khachhang {
     position: fixed;
     inset: 0;
@@ -11,13 +16,13 @@
     background-attachment: fixed;
 }
 
-/* Bọc toàn trang để nổi lên trên nền */
+/* 2) Bọc toàn trang để nổi lên trên nền */
 .kh-page {
     position: relative;
     z-index: 1;
 }
 
-/* Tiêu đề + mô tả (nếu dùng) */
+/* 3) Tiêu đề + mô tả */
 .kh-title {
     color: #fff;
     font-weight: 900;
@@ -30,12 +35,12 @@
     margin-bottom: 14px;
 }
 
-/* Nút thêm mới (primary pill) */
+/* 4) Nút thêm mới (primary pill) */
 .kh-btn-primary {
     border-radius: 999px;
     padding: 10px 16px;
     font-weight: 800;
-    background: linear-gradient(180deg, #cfe0ff, #8ab4ff);
+    background: linear-gradient(180deg,#cfe0ff,#8ab4ff);
     color: #0b1020;
     border: 0;
     box-shadow: 0 10px 26px rgba(138,180,255,.28);
@@ -46,10 +51,10 @@
         box-shadow: 0 12px 34px rgba(138,180,255,.36);
     }
 
-/* Khung bảng glass */
+/* 5) Khung bảng glass */
 .kh-table-wrap {
     margin-top: 8px;
-    background: linear-gradient(180deg, rgba(16,26,52,.90), rgba(10,18,38,.88));
+    background: linear-gradient(180deg,rgba(16,26,52,.90),rgba(10,18,38,.88));
     border: 1px solid rgba(255,255,255,.10);
     border-radius: 18px;
     padding: 16px;
@@ -58,7 +63,7 @@
     -webkit-backdrop-filter: blur(10px);
 }
 
-/* Tuỳ biến bảng Bootstrap cho dễ đọc */
+/* 6) Tuỳ biến bảng Bootstrap */
 .table.kh-table {
     color: #eaf1ff;
     margin: 0;
@@ -66,10 +71,11 @@
     border-spacing: 0;
     overflow: hidden;
     border-radius: 12px;
+    background: transparent !important;
 }
 
     .table.kh-table thead.table-dark {
-        background: linear-gradient(180deg, #162445, #12213f) !important;
+        background: linear-gradient(180deg,#162445,#12213f) !important;
         color: #cfe0ff !important;
         border-bottom: 1px solid rgba(255,255,255,.08);
     }
@@ -79,11 +85,13 @@
         letter-spacing: .2px;
         padding: 14px 16px;
         vertical-align: middle;
+        color: #eaf1ff !important;
     }
 
     .table.kh-table tbody td {
         padding: 12px 16px;
         border-color: rgba(255,255,255,.09) !important;
+        color: #e6edff !important;
     }
 
     .table.kh-table tbody tr {
@@ -94,7 +102,7 @@
             background: rgba(138,180,255,.10) !important;
         }
 
-/* Mask mật khẩu cho cột MatKhau nếu bạn vẫn bind trực tiếp */
+/* 7) Mask mật khẩu */
 td[data-mask="password"] {
     letter-spacing: 2px;
 }
@@ -103,7 +111,7 @@ td[data-mask="password"] {
         content: "••••••";
     }
 
-/* Nút hành động nhỏ */
+/* 8) Nút hành động nhỏ */
 .btn.kh-btn-xs {
     border-radius: 10px;
     font-weight: 800;
@@ -129,7 +137,7 @@ td[data-mask="password"] {
     color: #fff;
 }
 
-/* Back button giống primary */
+/* 9) Back button */
 .kh-back {
     display: inline-flex;
     align-items: center;
@@ -137,11 +145,12 @@ td[data-mask="password"] {
     border-radius: 999px;
     padding: 10px 16px;
     font-weight: 800;
-    background: linear-gradient(180deg, #cfe0ff, #8ab4ff);
+    background: linear-gradient(180deg,#cfe0ff,#8ab4ff);
     color: #0b1020;
     border: 0;
     box-shadow: 0 10px 26px rgba(138,180,255,.28);
     margin-top: 12px;
+    text-decoration: none !important;
 }
 
     .kh-back:hover {
@@ -149,7 +158,7 @@ td[data-mask="password"] {
         box-shadow: 0 12px 34px rgba(138,180,255,.36);
     }
 
-/* Responsive */
+/* 10) Responsive */
 @media (max-width:576px) {
     .kh-table-wrap {
         padding: 12px;
@@ -160,54 +169,16 @@ td[data-mask="password"] {
     }
 }
 
-/* 1) Chữ trong bảng rõ hơn */
-.table.kh-table thead th {
-    color: #eaf1ff !important;
-}
-
-.table.kh-table tbody td {
-    color: #e6edff !important; /* sáng hơn, dễ đọc */
-    opacity: 1 !important;
-}
-
-/* Giữ màu các nút hành động như cũ (không đụng) */
-
-/* 2) Nút "Quay về trang chủ" bỏ gạch chân */
-.kh-back {
-    text-decoration: none !important;
-}
-
-    .kh-back:hover,
-    .kh-back:focus {
-        text-decoration: none !important;
-    }
-
 /* ===== Create Customer (Form) ===== */
-.kh-title {
-    color: #fff;
-    font-weight: 900;
-    letter-spacing: .2px;
-}
-
-/* Nền trang (đang dùng cho list) tái sử dụng luôn */
-.site-bg--khachhang {
-    position: fixed;
-    inset: 0;
-    z-index: 0;
-    pointer-events: none;
-}
-
-/* Bọc nội dung nổi lên trên nền */
 .kh-create-page {
     position: relative;
     z-index: 1;
 }
 
-/* Form glass 2 cột tự co giãn */
 .kh-form-glass {
     max-width: 980px;
     margin-top: 10px;
-    background: linear-gradient(180deg, rgba(16,26,52,.90), rgba(10,18,38,.88));
+    background: linear-gradient(180deg,rgba(16,26,52,.90),rgba(10,18,38,.88));
     border: 1px solid rgba(255,255,255,.10);
     border-radius: 18px;
     box-shadow: 0 12px 36px rgba(2,6,23,.55);
@@ -215,7 +186,7 @@ td[data-mask="password"] {
     -webkit-backdrop-filter: blur(10px);
     padding: 22px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
     gap: 16px 20px;
 }
 
@@ -258,7 +229,7 @@ td[data-mask="password"] {
     display: block;
 }
 
-/* Hàng nút chiếm full hàng dưới cùng */
+/* Hành động form */
 .kh-actions {
     grid-column: 1 / -1;
     display: flex;
@@ -266,12 +237,11 @@ td[data-mask="password"] {
     margin-top: 4px;
 }
 
-/* Nút đồng bộ với list */
 .kh-btn-primary {
     border-radius: 12px;
     padding: 10px 16px;
     font-weight: 800;
-    background: linear-gradient(180deg, #cfe0ff, #8ab4ff);
+    background: linear-gradient(180deg,#cfe0ff,#8ab4ff);
     color: #0b1020;
     border: 0;
     box-shadow: 0 10px 26px rgba(138,180,255,.28);
@@ -296,7 +266,6 @@ td[data-mask="password"] {
         border-color: rgba(255,255,255,.28);
     }
 
-/* Mobile */
 @media (max-width:576px) {
     .kh-form-glass {
         padding: 16px;
@@ -316,7 +285,7 @@ td[data-mask="password"] {
 
 .kh-detail-card {
     max-width: 960px;
-    background: linear-gradient(180deg, rgba(16,26,52,.90), rgba(10,18,38,.88));
+    background: linear-gradient(180deg,rgba(16,26,52,.90),rgba(10,18,38,.88));
     border: 1px solid rgba(255,255,255,.10);
     border-radius: 18px;
     padding: 20px;
@@ -326,7 +295,6 @@ td[data-mask="password"] {
     margin-top: 10px;
 }
 
-/* Lưới nhãn/giá trị: 2 cột desktop, 1 cột mobile */
 .kh-detail-grid {
     display: grid;
     grid-template-columns: 180px 1fr;
@@ -347,20 +315,17 @@ td[data-mask="password"] {
         padding-bottom: 6px;
     }
 
-/* Ẩn/mask mật khẩu */
 .kh-mask {
     letter-spacing: 2px;
 }
 
-/* Hành động */
 .kh-detail-actions {
     display: flex;
     gap: 10px;
     margin-top: 16px;
 }
 
-/* Responsive */
-@media (max-width: 576px) {
+@media (max-width:576px) {
     .kh-detail-card {
         padding: 16px;
     }
@@ -376,4 +341,90 @@ td[data-mask="password"] {
     .kh-detail-actions {
         flex-wrap: wrap;
     }
+}
+/* ===== TABLE SYSTEM (dark glass) ===== */
+.tbl-wrap{
+  background:linear-gradient(180deg,rgba(16,26,52,.92),rgba(10,18,38,.88));
+  border:1px solid rgba(255,255,255,.10);
+  border-radius:18px;
+  box-shadow:0 12px 36px rgba(2,6,23,.55);
+  backdrop-filter:blur(10px);
+  -webkit-backdrop-filter:blur(10px);
+  padding:10px;             /* sát mép nhưng vẫn thoáng */
+  overflow:hidden;
+}
+.table.tbl{
+  --bs-table-bg:transparent;
+  --bs-table-color:#eaf1ff;
+  --bs-table-border-color:rgba(255,255,255,.10);
+  --bs-table-striped-bg:rgba(255,255,255,.04);
+  --bs-table-striped-color:#eaf1ff;
+  --bs-table-hover-bg:rgba(138,180,255,.10);
+  --bs-table-hover-color:#f4f7ff;
+  color:#eaf1ff;
+  margin:0;
+  border-collapse:separate;
+  border-spacing:0;
+}
+.table.tbl thead{
+  position:sticky; top:0; z-index:1;  /* header dính */
+}
+.table.tbl thead tr{
+  background:linear-gradient(180deg,#162445,#12213f) !important;
+}
+.table.tbl thead th{
+  color:#cfe0ff !important;
+  font-weight:800; letter-spacing:.2px;
+  padding:14px 16px; vertical-align:middle;
+  white-space:nowrap;
+  border-bottom:1px solid rgba(255,255,255,.08)!important;
+}
+.table.tbl tbody td{
+  padding:12px 16px; vertical-align:middle;
+  border-top:1px solid rgba(255,255,255,.08)!important;
+}
+.table-hover.tbl tbody tr:hover{
+  background:var(--bs-table-hover-bg)!important;
+}
+.table.tbl tbody tr:hover td, .table.tbl tbody tr:hover th, .table.tbl tbody tr:hover a{
+  color:var(--bs-table-hover-color)!important;   /* fix hover “mất chữ” */
+}
+
+/* cột & canh hàng */
+.tbl .col-id      { width:80px;  text-align:center; }
+.tbl .col-sm      { width:120px; }
+.tbl .col-md      { width:180px; }
+.tbl .col-lg      { width:240px; }
+.tbl .col-price, .tbl .col-number { text-align:right; }
+.tbl .col-actions { width:220px; text-align:center; }
+
+/* văn bản dài: tự xuống dòng nhưng không nổ layout */
+.tbl .text-clip{ max-width:280px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+
+/* badge */
+.badge-chip{
+  display:inline-flex; align-items:center; gap:6px;
+  padding:6px 10px; border-radius:999px; font-weight:800; font-size:12.5px;
+  border:1px solid rgba(255,255,255,.12);
+}
+.badge-on  { background:rgba(34,197,94,.14);  border-color:rgba(34,197,94,.28);  color:#bbf7d0; }
+.badge-off { background:rgba(239,68,68,.14);  border-color:rgba(239,68,68,.30);  color:#fecaca; }
+
+/* nút trong bảng */
+.tbl .btn.btn-sm{
+  border-radius:10px; font-weight:800;
+  border:1px solid rgba(255,255,255,.14);
+  transition:transform .12s ease, box-shadow .12s ease;
+}
+.tbl .btn.btn-sm:hover{ transform:translateY(-1px); box-shadow:0 8px 22px rgba(138,180,255,.18); }
+
+/* responsive: cuộn ngang mượt + thu gọn cột hành động */
+@media (max-width: 992px){
+  .tbl-scroll{ overflow:auto; }
+  .tbl .col-actions{ width:180px; }
+  .tbl .text-clip{ max-width:200px; }
+}
+@media (max-width: 576px){
+  .tbl .col-actions{ width:160px; }
+  .table.tbl thead th, .table.tbl tbody td{ padding:10px 12px; }
 }

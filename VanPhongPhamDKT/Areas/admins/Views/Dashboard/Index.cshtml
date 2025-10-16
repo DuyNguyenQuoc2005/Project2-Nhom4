@@ -1,4 +1,4 @@
-﻿@{
+﻿﻿@{
     ViewData["Title"] = "Bảng điều khiển";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
@@ -7,6 +7,9 @@
 <link rel="stylesheet" href="~/css/dashboard.css" />
 
 
+<!-- LAYER NỀN – đứng sau nội dung nhưng đứng trước background trắng của body -->
+<div id="bg-dashboard" aria-hidden="true"></div>
+<div class="page-dashboard">
 <div class="app-shell">
     <!-- Sidebar -->
     <aside class="app-sidebar">
@@ -104,5 +107,4 @@
         </div>
     </main>
 </div>
-
-
+</div>

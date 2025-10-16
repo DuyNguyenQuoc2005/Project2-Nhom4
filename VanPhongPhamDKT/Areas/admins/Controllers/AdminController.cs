@@ -23,7 +23,7 @@ namespace VanPhongPhamDKT.Areas.admins.Controllers
         // GET: admins/Admin/Details/5
         public IActionResult Details(int id)
         {
-            var admin = _context.Admins.Find(id); // ✅ Không cần dùng a.MaId
+            var admin = _context.Admins.FirstOrDefault(a => a.MaId == id);
             if (admin == null) return NotFound();
             return View(admin);
         }

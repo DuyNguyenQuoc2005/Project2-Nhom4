@@ -1,70 +1,124 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
 using System.Security.Claims;
 using VanPhongPhamDKT.Models;
 
-public class AuthController : Controller
+namespace VanPhongPhamDKT.Controllers
 {
-    private readonly VanPhongPhamContext _context;
-    public AuthController(VanPhongPhamContext context)
+    public class AuthController : Controller
     {
-        _context = context;
-    }
+        private readonly VanPhongPhamContext _context;
+        public AuthController(VanPhongPhamContext context) => _context = context;
 
-    // GET: /Auth/DangNhap
-    public IActionResult DangNhap()
-    {
-        return View();
-    }
-
-    // POST: /Auth/DangNhap
-    [HttpPost]
-    public async Task<IActionResult> DangNhap(string email, string matKhau)
-    {
-        var user = _context.KhachHangs
-            .FirstOrDefault(x => x.Email == email && x.MatKhau == matKhau);
-
-        if (user == null)
+        // ========== ĐĂNG NHẬP ==========
+        [HttpGet, AllowAnonymous]
+        public IActionResult DangNhap(string? returnUrl = null)
         {
-            ViewBag.Error = "Email hoặc mật khẩu không đúng!";
+            ViewBag.ReturnUrl = returnUrl;
             return View();
         }
 
-        // Tạo claims
-        var claims = new List<Claim>
+        [HttpPost, AllowAnonymous]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DangNhap(string email, string matKhau, string? returnUrl = null)
         {
-            new Claim(ClaimTypes.Name, user.HoTen),
-            new Claim(ClaimTypes.Email, user.Email),
-            new Claim(ClaimTypes.Role, user.ChucVu ?? "khachhang")  // lấy từ cột ChucVu
-        };
+            if (string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(matKhau))
+            {
+                ViewBag.Error = "Vui lòng nhập email và mật khẩu.";
+                ViewBag.ReturnUrl = returnUrl;
+                return View();
+            }
 
-        var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
-        var principal = new ClaimsPrincipal(identity);
+            var user = await _context.KhachHangs
+                                     .AsNoTracking()
+                                     .FirstOrDefaultAsync(x => x.Email == email && x.MatKhau == matKhau);
 
-        await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal);
+            if (user == null)
+            {
+                ViewBag.Error = "Email hoặc mật khẩu không đúng!";
+                ViewBag.ReturnUrl = returnUrl;
+                return View();
+            }
 
-        // Điều hướng theo ChucVu
-        if (user.ChucVu != null && user.ChucVu.ToLower() == "admin")
-        {
-            return RedirectToAction("Index", "Dashboard", new { area = "admins" });
-        }
-        else
-        {
+            // Claims
+            var claims = new List<Claim>
+            {
+                new Claim(ClaimTypes.NameIdentifier, user.MaKh.ToString()),
+                new Claim(ClaimTypes.Name, user.HoTen ?? user.Email),
+                new Claim(ClaimTypes.Email, user.Email),
+                new Claim(ClaimTypes.Role, string.IsNullOrWhiteSpace(user.ChucVu) ? "khachhang" : user.ChucVu!)
+            };
+
+            var principal = new ClaimsPrincipal(
+                new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme));
+
+            // Cookie auth props
+            var authProps = new AuthenticationProperties
+            {
+                IsPersistent = false, // tránh auto-login quá lâu; cần thì đổi true
+                ExpiresUtc = DateTimeOffset.UtcNow.AddHours(8),
+                AllowRefresh = true
+            };
+
+            await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal, authProps);
+
+            // Lưu email vào Session cho CartController
+            HttpContext.Session.SetString("UserEmail", user.Email);
+
+            // Điều hướng
+            if (!string.IsNullOrEmpty(returnUrl) && Url.IsLocalUrl(returnUrl))
+                return Redirect(returnUrl);
+
+            if (!string.IsNullOrEmpty(user.ChucVu) && user.ChucVu.Trim().ToLower() == "admin")
+                return RedirectToAction("Index", "Dashboard", new { area = "admins" });
+
             return RedirectToAction("Index", "Home");
         }
-    }
 
-    // Đăng xuất
-    public async Task<IActionResult> DangXuat()
-    {
-        await HttpContext.SignOutAsync();
-        return RedirectToAction("DangNhap");
-    }
+        // ========== ĐĂNG KÝ ==========
+        [HttpGet, AllowAnonymous]
+        public IActionResult DangKi() => View();
 
-    public IActionResult KhongDuQuyen()
-    {
-        // Có thể truyền thêm ViewBag.Message nếu muốn
-        return View();
+        [HttpPost, AllowAnonymous]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DangKi(KhachHang model)
+        {
+            if (!ModelState.IsValid) return View(model);
+
+            var exists = await _context.KhachHangs.AnyAsync(x => x.Email == model.Email);
+            if (exists)
+            {
+                ViewBag.Error = "Email đã được sử dụng.";
+                return View(model);
+            }
+
+            // TODO: Hash mật khẩu nếu cần
+            _context.KhachHangs.Add(model);
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction(nameof(DangNhap));
+        }
+
+        // ========== ĐĂNG XUẤT ==========
+        // GET: Trang xác nhận
+        [HttpGet]
+        public IActionResult DangXuat() => View();
+
+        // POST: Thực thi đăng xuất (an toàn)
+        [HttpPost, ActionName("DangXuat")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DangXuat_Post()
+        {
+            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+            HttpContext.Session.Remove("UserEmail");
+            return RedirectToAction(nameof(DangNhap));
+        }
+
+        // ========== TRANG 403 ==========
+        [HttpGet]
+        public IActionResult KhongDuQuyen() => View();
     }
 }

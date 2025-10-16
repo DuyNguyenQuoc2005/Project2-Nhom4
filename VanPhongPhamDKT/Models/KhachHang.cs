@@ -15,11 +15,11 @@ public partial class KhachHang
 
     public string? DiaChi { get; set; }
 
+    public string? ChucVu { get; set; }
+
     public string? SoDienThoai { get; set; }
 
     public DateTime? NgayTao { get; set; }
-
-    public string ChucVu { get; set; } = null!;
 
     public virtual ICollection<DonHang> DonHangs { get; set; } = new List<DonHang>();
 }

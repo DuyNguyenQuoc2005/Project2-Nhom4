@@ -15,71 +15,71 @@
 <!-- Bọc toàn bộ nội dung trang để nổi lên trên nền -->
 <div class="admin-page">
 
-<h2 class="page-title mb-1">Danh sách Admin</h2>
-<p class="page-desc">Quản lý tài khoản quản trị trong hệ thống.</p>
+    <h2 class="page-title mb-1">Danh sách Admin</h2>
+    <p class="page-desc">Quản lý tài khoản quản trị trong hệ thống.</p>
 
-<p>
-    <a class="btn btn-primary btn-add" asp-area="admins" asp-controller="Admin" asp-action="Create">
-        + Thêm mới Admin
-    </a>
-</p>
+    <p>
+        <a class="btn btn-primary btn-add" asp-area="admins" asp-controller="Admin" asp-action="Create">
+            + Thêm mới Admin
+        </a>
+    </p>
 
-<div class="table-wrap">
-    <table class="table table-bordered table-hover table-striped align-middle">
-        <thead class="table-dark text-center">
-            <tr>
-                <th>@Html.DisplayNameFor(model => model.HoTen)</th>
-                <th>@Html.DisplayNameFor(model => model.Email)</th>
-                <th>Mật khẩu</th>
-                <th>@Html.DisplayNameFor(model => model.SoDienThoai)</th>
-                <th>@Html.DisplayNameFor(model => model.ChucVu)</th>
-                <th>@Html.DisplayNameFor(model => model.NgayTao)</th>
-                <th>@Html.DisplayNameFor(model => model.TrangThai)</th>
-                <th>Chức năng</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in Model)
-            {
+    <div class="table-wrap">
+        <table class="table table-bordered table-hover table-striped align-middle">
+            <thead class="table-dark text-center">
                 <tr>
-                    <td>@item.HoTen</td>
-                    <td>@item.Email</td>
-                    <td>******</td>
-                    <td>@item.SoDienThoai</td>
-                    <td>@item.ChucVu</td>
-                    <td>@(item.NgayTao.HasValue ? item.NgayTao.Value.ToString("dd/MM/yyyy") : "")</td>
-                    <td>
-                        @if (item.TrangThai == "true")
-                        {
-                            <span class="badge-state badge-on">Hoạt động</span>
-                        }
-                        else
-                        {
-                            <span class="badge-state badge-off">Khóa</span>
-                        }
-                    </td>
-                    <td class="text-center">
-                        <div class="btn-group">
-                            <a class="btn btn-sm btn-warning me-1"
-                               asp-area="admins" asp-controller="Admin" asp-action="Edit" asp-route-id="@item.MaId">
-                                Sửa
-                            </a>
-                            <a class="btn btn-sm btn-info me-1"
-                               asp-area="admins" asp-controller="Admin" asp-action="Details" asp-route-id="@item.MaId">
-                                Xem
-                            </a>
-                            <a class="btn btn-sm btn-danger"
-                               asp-area="admins" asp-controller="Admin" asp-action="Delete" asp-route-id="@item.MaId"
-                               onclick="return confirm('Bạn có chắc muốn xóa admin này không?');">
-                                Xóa
-                            </a>
-                        </div>
-                    </td>
+                    <th>@Html.DisplayNameFor(model => model.HoTen)</th>
+                    <th>@Html.DisplayNameFor(model => model.Email)</th>
+                    <th>Mật khẩu</th>
+                    <th>@Html.DisplayNameFor(model => model.SoDienThoai)</th>
+                    <th>@Html.DisplayNameFor(model => model.ChucVu)</th>
+                    <th>@Html.DisplayNameFor(model => model.NgayTao)</th>
+                    <th>@Html.DisplayNameFor(model => model.TrangThai)</th>
+                    <th>Chức năng</th>
                 </tr>
-            }
-        </tbody>
-    </table>
-</div>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.HoTen</td>
+                        <td>@item.Email</td>
+                        <td>******</td>
+                        <td>@item.SoDienThoai</td>
+                        <td>@item.ChucVu</td>
+                        <td>@(item.NgayTao.HasValue ? item.NgayTao.Value.ToString("dd/MM/yyyy") : "")</td>
+                        <td>
+                            @if (item.TrangThai == true)
+                            {
+                                <span class="badge-state badge-on">Hoạt động</span>
+                            }
+                            else
+                            {
+                                <span class="badge-state badge-off">Khóa</span>
+                            }
+                        </td>
+                        <td class="text-center">
+                            <div class="btn-group">
+                                <a class="btn btn-sm btn-warning me-1"
+                                   asp-area="admins" asp-controller="Admin" asp-action="Edit" asp-route-id="@item.MaId">
+                                    Sửa
+                                </a>
+                                <a class="btn btn-sm btn-info me-1"
+                                   asp-area="admins" asp-controller="Admin" asp-action="Details" asp-route-id="@item.MaId">
+                                    Xem
+                                </a>
+                                <a class="btn btn-sm btn-danger"
+                                   asp-area="admins" asp-controller="Admin" asp-action="Delete" asp-route-id="@item.MaId"
+                                   onclick="return confirm('Bạn có chắc muốn xóa admin này không?');">
+                                    Xóa
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
 </div> <!-- /admin-page -->
 
 <p class="mt-3">

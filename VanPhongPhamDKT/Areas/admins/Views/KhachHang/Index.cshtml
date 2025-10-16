@@ -21,11 +21,13 @@
         <table class="table table-bordered table-striped kh-table">
             <thead class="table-dark">
                 <tr>
+                    <th>@Html.DisplayNameFor(model => model.MaKh)</th>
                     <th>@Html.DisplayNameFor(model => model.HoTen)</th>
                     <th>@Html.DisplayNameFor(model => model.Email)</th>
                     <th>@Html.DisplayNameFor(model => model.MatKhau)</th>
                     <th>@Html.DisplayNameFor(model => model.DiaChi)</th>
                     <th>@Html.DisplayNameFor(model => model.SoDienThoai)</th>
+                    <th>@Html.DisplayNameFor(model => model.ChucVu)</th>
                     <th>@Html.DisplayNameFor(model => model.NgayTao)</th>
                     <th>Hành động</th>
                 </tr>
@@ -34,11 +36,13 @@
                 @foreach (var item in Model)
                 {
                     <tr>
+                        <td>@item.MaKh</td>
                         <td>@item.HoTen</td>
                         <td>@item.Email</td>
                         <td data-mask="password"></td> @* ẩn mật khẩu *@
                         <td>@item.DiaChi</td>
                         <td>@item.SoDienThoai</td>
+                        <td>@item.ChucVu</td>
                         <td>@item.NgayTao?.ToString("dd/MM/yyyy")</td>
                         <td>
                             <a asp-action="Edit" asp-route-id="@item.MaKh" class="btn btn-warning btn-sm kh-btn-xs">Sửa</a>
